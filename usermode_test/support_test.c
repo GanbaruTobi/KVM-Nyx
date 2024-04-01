@@ -42,7 +42,7 @@
 int main(){
 	int kvm, ret;
 
-	kvm = open("/dev/dell", O_RDWR | O_CLOEXEC);
+	kvm = open("/dev/kvm", O_RDWR | O_CLOEXEC);
 	if (kvm == -1){
 		printf("ERROR: KVM is not loaded!\n");
 		exit(1);
